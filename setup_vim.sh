@@ -6,7 +6,7 @@ git clone https://github.com/easymotion/vim-easymotion.git ~/.vim/pack/plugins/s
 
 
 cat <<EOT >> ~/.vimrc
-echo "nnoremap <SPACE> <Nop>" 
+nnoremap <SPACE> <Nop>
 let mapleader=" "
 
 let g:ctrlp_map = '<c-p>'
