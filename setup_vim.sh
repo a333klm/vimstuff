@@ -3,10 +3,12 @@ mkdir -p ~/.vim/pack/plugins/start/
 git clone https://github.com/ctrlpvim/ctrlp.vim.git ~/.vim/pack/plugins/start/ctrlpvim
 git clone https://github.com/easymotion/vim-easymotion.git ~/.vim/pack/plugins/start/vim-easymotion
 
+
+
+cat <<EOT >> ~/.vimrc
 echo "nnoremap <SPACE> <Nop>" 
 let mapleader=" "
 
-cat <<EOT >> ~/.vimrc
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 map  <Leader>f <Plug>(easymotion-bd-f)
