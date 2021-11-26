@@ -1,3 +1,5 @@
+:set mouse=a
+
 nnoremap <SPACE> <Nop>
 let mapleader=" "
 
