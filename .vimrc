@@ -6,8 +6,8 @@ let mapleader=" "
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
 
-map  <Leader>f <Plug>(easymotion-bd-f)
-nmap <Leader>f <Plug>(easymotion-overwin-f)
+map  <Leader> <Plug>(easymotion-bd-f)
+nmap <Leader> <Plug>(easymotion-overwin-f)
 
 " Move to line
 map <Leader>l <Plug>(easymotion-bd-jk)
