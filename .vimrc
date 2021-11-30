@@ -2,6 +2,8 @@ syntax on
 set background=dark
 colorscheme gruvbox
 
+set completeopt=menuone,longest
+
 set autochdir
 set mouse=a
 set relativenumber
@@ -20,9 +22,6 @@ let g:netrw_browse_split =4
 let g:netrw_altv = 1
 let g:netrw_liststyle = 3
 set autochdir
-
-set nocompatible
-set path+=**
 
 
 set statusline=[%n]\ %t
