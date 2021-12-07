@@ -1,1 +1,1 @@
-sudo apt-get install mercurial mercurial-keyring git vim cmake i3 j4-dmenu-desktop htop spectacle -y
+sudo apt-get install mercurial mercurial-keyring git vim cmake i3 j4-dmenu-desktop htop kde-spectacle -y
