@@ -49,7 +49,7 @@ nnoremap gb :ls<CR>:b<SPACE>
 
 map <F2> :mksession! ~/vim_session <cr> :wqa<cr> " Quick write session with F2
 map <F3> :source ~/vim_session <cr>     " And load session with F3
-
+map <F4> gggqG " code formatter on F4
 
 set wildmenu
 set wildmode=list:full
