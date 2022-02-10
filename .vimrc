@@ -84,3 +84,9 @@ let g:cpp_member_highlight = 1
 " Put all standard C and C++ keywords under Vim's highlight group 'Statement'
 " (affects both C and C++ files)
 let g:cpp_simple_highlight = 1
+
+set path=~/finroc/sources/cpp/
+
+let g:ale_cpp_cc_options = '-std=c++14 -include libinfo.h -include make_builder/enum_strings_builder/enum_strings.h -I/home/jannis/finroc/sources/cpp -I/usr/include/libxml2/ -I/usr/include/pcl-1.8 -I/usr/include/eigen3'
+let g:ale_lsp_show_message_severity = 'error'
+
