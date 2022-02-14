@@ -1,6 +1,9 @@
+let mapleader=" "
 autocmd FileType qf wincmd J
 set tags=~/finroc/tags
 
+
+set hlsearch
 syntax on
 set background=dark
 colorscheme onedark
@@ -8,12 +11,15 @@ set completeopt=menuone,longest
 map <F9> :wa<CR>:make <CR>
 set nowrap
 set mouse=a
-set relativenumber
+" set relativenumber
+set number
 set smartindent
 set tabstop=2
 set shiftwidth=2
 set expandtab
 set undofile
+set backupdir=~/.vim/backup
+set directory=~/.vim/swap
 set undodir=~/.vim/undodir
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
 set list
@@ -25,6 +31,8 @@ map <silent> <C-P> :Files<CR>
 map <silent> <C-T> :Lexplore<CR>
 map <silent> <C-R> :reg<CR>
 map <silent> <C-K> :changes<CR>
+map <silent> <leader>v :vsp $MYVIMRC<CR>
+map <silent> <leader>sv :w<CR>:source $MYVIMRC<CR>:q<CR>
 nnoremap <space> <C-W>w
 let g:netrw_winsize = -38
 let g:netrw_browse_split =4 
@@ -42,7 +50,7 @@ nnoremap ö :
 nnoremap - /
 
 
-let mapleader=" "
+ithub
 
 nnoremap gb :ls<CR>:b<SPACE>
 
@@ -50,6 +58,9 @@ nnoremap gb :ls<CR>:b<SPACE>
 map <F2> :mksession! ~/vim_session <cr> :wqa<cr> " Quick write session with F2
 map <F3> :source ~/vim_session <cr>     " And load session with F3
 map <F4> gggqG " code formatter on F4
+map <silent> <F5> :e %:r.cpp<CR>
+map <silent> <F6> :e %:r.h<CR>
+map <silent> <F7> :nohls<CR>
 
 set wildmenu
 set wildmode=list:full
@@ -87,6 +98,6 @@ let g:cpp_simple_highlight = 1
 
 set path=~/finroc/sources/cpp/
 
-let g:ale_cpp_cc_options = '-std=c++14 -include libinfo.h -include make_builder/enum_strings_builder/enum_strings.h -I/home/jannis/finroc/sources/cpp -I/usr/include/libxml2/ -I/usr/include/pcl-1.8 -I/usr/include/eigen3'
+let g:ale_cpp_cc_options = '-std=c++14 -include libinfo.h -include make_builder/enum_strings_builder/enum_strings.h -I/home/j_egelhof/finroc/sources/cpp -I/usr/include/libxml2/ -I/usr/include/pcl-1.8 -I/usr/include/eigen3'
 let g:ale_lsp_show_message_severity = 'error'
 
