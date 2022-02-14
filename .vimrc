@@ -50,8 +50,6 @@ nnoremap ö :
 nnoremap - /
 
 
-ithub
-
 nnoremap gb :ls<CR>:b<SPACE>
 
 
