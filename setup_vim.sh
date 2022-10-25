@@ -8,4 +8,5 @@ git clone https://github.com/junegunn/fzf.vim.git ~/.vim/pack/plugins/start/fzf.
 git clone https://github.com/ludovicchabant/vim-lawrencium.git ~/.vim/pack/plugins/start/vim-lawrencium
 git clone https://github.com/bfrg/vim-cpp-modern.git ~/.vim/pack/plugins/start/vim-cpp-modern
 git clone https://github.com/vim-scripts/AutoComplPop.git ~/.vim/pack/plugins/start/AutoComplPop
-mv .vimrc ~/.vimrc
+git clone https://github.com/yonchu/accelerated-smooth-scroll.git ~/.vim/pack/plugins/start/accelerated-smooth-scroll
+cp .vimrc ~/.vimrc
