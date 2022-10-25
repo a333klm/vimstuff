@@ -9,4 +9,6 @@ git clone https://github.com/ludovicchabant/vim-lawrencium.git ~/.vim/pack/plugi
 git clone https://github.com/bfrg/vim-cpp-modern.git ~/.vim/pack/plugins/start/vim-cpp-modern
 git clone https://github.com/vim-scripts/AutoComplPop.git ~/.vim/pack/plugins/start/AutoComplPop
 git clone https://github.com/yonchu/accelerated-smooth-scroll.git ~/.vim/pack/plugins/start/accelerated-smooth-scroll
+mkdir -p ~/.vim/pack/git-plugins/start
+git clone --depth 1 https://github.com/dense-analysis/ale.git ~/.vim/pack/git-plugins/start/ale
 cp .vimrc ~/.vimrc
