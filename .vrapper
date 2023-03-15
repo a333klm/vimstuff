@@ -1,0 +1,27 @@
+let mapleader=","
+
+eclipseuiaction! findAction org.eclipse.ui.window.quickAccess
+nnoremap <leader>f :findAction<CR>
+
+eclipseuiaction! openResource org.eclipse.ui.navigate.openResource
+nnoremap ü :openResource<CR>
+
+eclipseaction! openDeclaration org.eclipse.cdt.ui.edit.opendecl
+nnoremap <leader>g :openDeclaration<CR>
+
+eclipseaction! buildAll org.eclipse.ui.project.buildAll
+nnoremap <leader>b :buildAll<CR>
+
+eclipseaction! searchAll org.eclipse.search.ui.openSearchDialog
+nnoremap <leader>h :searchAll<CR>
+
+eclipseaction! openTerminal org.eclipse.tm.terminal.view.ui.command.launchToolbar 
+nnoremap <leader>t :openTerminal<CR>
+
+eclipseaction! debug org.eclipse.debug.ui.commands.DebugLast
+nnoremap <leader>d :debug<CR>
+
+eclipseaction! run org.eclipse.debug.ui.commands.RunLast
+nnoremap <leader>r :run<CR>
+
+noremap ö /
